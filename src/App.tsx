@@ -20,12 +20,11 @@ function App() {
     ws.onmessage=(message)=>{
       alert(message.data);
     }
-
   },[])
   return (
     <>
       <div>
-        <h1>WebSockets Chat</h1>
+        <h1 >WebSockets Chat</h1>
         <p>Open the console to see the WebSocket messages.</p>
         <input ref={inputRef} type="text" placeholder="message" ></input>
         <button onClick={sendMessage}>Send</button>
